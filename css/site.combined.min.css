@@ -1,13 +1,13 @@
 /**
  * @project        frontend-mentor-challenge
  * @author         David Maillard, <maillard.david23@gmail.com>
- * @build          Wed, Jun 23, 2021 4:49 PM ET
- * @release        209a4bdec0241647594983fc4a03391a5dc78d9f [main]
+ * @build          Wed, Jun 23, 2021 11:27 PM ET
+ * @release        6f0e4ca56ffc68816380e8774234eb889adc83a5 [main]
  * @copyright      Copyright (c) 2021, REPLACE_ME
  *
  */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
 * {
   box-sizing: border-box; }
 
@@ -23,61 +23,60 @@ body {
   justify-content: center;
   padding: 24px;
   margin: 0;
-  background-color: #0a0c1c; }
-  body .card-container {
+  background: #f2f2f2; }
+  body .container {
     width: 100%;
-    max-width: 1110px;
+    max-width: 920px;
+    min-height: 500px;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-align: stretch;
     align-items: stretch;
-    background: #1B1937;
-    box-shadow: 0px 20px 20px -10px rgba(23, 25, 41, 0.203087);
     border-radius: 8px;
     overflow: hidden;
     margin-bottom: 20px; }
-    @media (max-width: 900px) {
-      body .card-container {
-        -ms-flex-direction: column-reverse;
-        flex-direction: column-reverse; } }
-    body .card-container .content-section {
-      padding: 71px 95px 59px 72px;
-      width: 50%;
+    @media (max-width: 830px) {
+      body .container {
+        -ms-flex-direction: column;
+        flex-direction: column;
+        min-height: none; } }
+    body .container .card {
+      width: calc(100% / 3);
       display: -ms-flexbox;
       display: flex;
       -ms-flex-direction: column;
       flex-direction: column;
       -ms-flex-align: start;
-      align-items: flex-start; }
-      @media (max-width: 1139px) {
-        body .card-container .content-section {
-          padding: 50px; } }
-      @media (max-width: 900px) {
-        body .card-container .content-section {
+      align-items: flex-start;
+      background: #E28625;
+      padding: 48px; }
+      @media (max-width: 830px) {
+        body .container .card {
           width: 100%; } }
-      @media (max-width: 767px) {
-        body .card-container .content-section {
-          padding: 40px 32px 32px;
-          -ms-flex-align: center;
-          align-items: center; } }
-      body .card-container .content-section .content-heading {
-        font-family: "Inter", sans-serif;
+      body .container .card:nth-child(2) {
+        background: #006971; }
+        body .container .card:nth-child(2) .card-button {
+          color: #006971; }
+      body .container .card:nth-child(3) {
+        background: #004140; }
+        body .container .card:nth-child(3) .card-button {
+          color: #004140; }
+      body .container .card .card-icon {
+        height: 40px;
+        margin-bottom: 35px; }
+      body .container .card .card-heading {
+        font-family: "Big Shoulders Display", cursive;
         font-style: normal;
         font-weight: bold;
-        font-size: 36px;
-        line-height: 44px;
-        color: #FFFFFF;
+        font-size: 40px;
+        line-height: 48px;
+        text-transform: uppercase;
+        color: #F2F2F2;
         margin: 0 0 25px; }
-        body .card-container .content-section .content-heading span {
-          color: #AB5CDB; }
-        @media (max-width: 767px) {
-          body .card-container .content-section .content-heading {
-            font-size: 28px;
-            line-height: 32px;
-            text-align: center;
-            margin-bottom: 16px; } }
-      body .card-container .content-section .content-text {
-        font-family: "Inter", sans-serif;
+      body .container .card .card-description {
+        -ms-flex: 1;
+        flex: 1;
+        font-family: "Lexend Deca", sans-serif;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -85,93 +84,35 @@ body {
         color: #FFFFFF;
         mix-blend-mode: normal;
         opacity: 0.75;
-        margin: 0 0 72px; }
-        @media (max-width: 767px) {
-          body .card-container .content-section .content-text {
-            text-align: center;
-            margin-bottom: 40px; } }
-      body .card-container .content-section .content-arguments {
-        width: 100%;
-        display: -ms-flexbox;
-        display: flex;
-        -ms-flex-align: start;
-        align-items: flex-start; }
-        @media (max-width: 767px) {
-          body .card-container .content-section .content-arguments {
-            -ms-flex-direction: column;
-            flex-direction: column;
-            -ms-flex-align: center;
-            align-items: center; } }
-        body .card-container .content-section .content-arguments .content-argument {
-          width: calc(100% / 3);
-          display: -ms-flexbox;
-          display: flex;
-          -ms-flex-direction: column;
-          flex-direction: column;
-          -ms-flex-align: start;
-          align-items: flex-start; }
-          @media (max-width: 767px) {
-            body .card-container .content-section .content-arguments .content-argument {
-              width: auto;
-              -ms-flex-align: center;
-              align-items: center;
-              margin-bottom: 24px; }
-              body .card-container .content-section .content-arguments .content-argument:last-child {
-                margin-bottom: 0; } }
-          body .card-container .content-section .content-arguments .content-argument .argument-bold {
-            font-family: "Inter", sans-serif;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 24px;
-            line-height: 29px;
-            color: #FFFFFF;
-            margin: 0 0 2px; }
-          body .card-container .content-section .content-arguments .content-argument .argument-text {
-            font-family: "Lexend Deca", sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 12px;
-            line-height: 25px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            color: #FFFFFF;
-            mix-blend-mode: normal;
-            opacity: 0.6;
-            margin: 0; }
-    body .card-container .image-section {
-      width: 50%;
-      display: -ms-flexbox;
-      display: flex;
-      background: #ab5cdb; }
-      @media (max-width: 900px) {
-        body .card-container .image-section {
-          width: 100%;
-          max-height: 300px; } }
-      body .card-container .image-section img {
-        width: 100%;
-        height: 100%;
-        mix-blend-mode: multiply;
-        opacity: 0.75;
-        object-fit: cover;
-        object-position: top center; }
-      @media (max-width: 900px) {
-        body .card-container .image-section {
-          width: 100%;
-          height: 300px; } }
-      @media (max-width: 767px) {
-        body .card-container .image-section {
-          height: 240px; } }
+        margin: 0 0 25px; }
+      body .container .card .card-button {
+        font-family: "Lexend Deca", sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 25px;
+        background-color: #FFFFFF;
+        color: #E28625;
+        padding: 11px 30px 12px;
+        border: 2px solid #FFFFFF;
+        border-radius: 25px;
+        text-decoration: none;
+        transition: background-color ease-out .2s, color ease-out .2s;
+        will-change: background-color, color; }
+        body .container .card .card-button:hover {
+          background-color: transparent;
+          color: #FFFFFF; }
   body .attribution {
-    font-family: "Inter", sans-serif;
+    font-family: "Lexend Deca", sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 15px;
     line-height: 25px;
-    color: #FFFFFF;
     mix-blend-mode: normal;
-    opacity: 0.75; }
+    opacity: 0.75;
+    text-align: center; }
     body .attribution a {
-      color: #ab5cdb;
+      color: #E28625;
       text-decoration: none; }
 
 

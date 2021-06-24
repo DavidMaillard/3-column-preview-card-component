@@ -2,19 +2,9 @@
 // Variables
 // --------------------------------------------------
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
 
 // Fonts
-$fontInter: 'Inter', sans-serif;
 $fontLexendDeca: 'Lexend Deca', sans-serif;
-
-$fontSize: 15px;
-
-// Accents Colors
-$darkBlue: hsl(233, 47%, 7%);
-$darkBlue2: hsl(244, 38%, 16%);
-$softViolet: hsl(277, 64%, 61%);
-$white: hsl(0, 0%, 100%);
-$white2: hsla(0, 0%, 100%, 0.75);
-$white3: hsla(0, 0%, 100%, 0.6);
+$fontBigShoulder: 'Big Shoulders Display', cursive;
