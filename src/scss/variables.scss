@@ -2,17 +2,19 @@
 // Variables
 // --------------------------------------------------
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
 // Fonts
-$fontText: 'Helvetica', 'Arial', 'sans-serif';
-$fontTitle: 'Helvetica', 'Arial', 'sans-serif';
+$fontInter: 'Inter', sans-serif;
+$fontLexendDeca: 'Lexend Deca', sans-serif;
+
+$fontSize: 15px;
 
 // Accents Colors
-$colorAccent1: #149ed8;
-
-// Blocks and Text
-$black: #000000;
-$white: #FFFFFF;
-$light: #E5E5E5;
-$grey: #A5A5A5;
-$lightGrey: #F2F2F2;
-$darkGrey: #303030;
+$darkBlue: hsl(233, 47%, 7%);
+$darkBlue2: hsl(244, 38%, 16%);
+$softViolet: hsl(277, 64%, 61%);
+$white: hsl(0, 0%, 100%);
+$white2: hsla(0, 0%, 100%, 0.75);
+$white3: hsla(0, 0%, 100%, 0.6);
